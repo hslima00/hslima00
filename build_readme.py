@@ -27,6 +27,34 @@ def fetch_thesis_updates():
     last_update = soup.find(text="Last update:").find_next().text
     return last_update
 
+def fetch_releases(token):
+    headers = {"Authorization": f"Bearer {token}"}
+    query = """
+    {
+      repository(owner:"OWNER", name:"REPO") {
+        releases(last: 5) {
+          nodes {
+            name
+            tagName
+            url
+            publishedAt
+          }
+        }
+      }
+    }
+    """
+    data = client.execute(query=query, headers=headers)
+    releases = [
+        {
+            "repo": "REPO",
+            "release": release["name"],
+            "url": release["url"],
+            "published_at": release["publishedAt"]
+        }
+        for release in data["data"]["repository"]["releases"]["nodes"]
+    ]
+    return releases
+
 if __name__ == "__main__":
     readme = root / "README.md"
     releases = fetch_releases(TOKEN)
