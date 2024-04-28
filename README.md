@@ -1,5 +1,5 @@
 ### Hi there 👋
-Currently working on my master thesis named [Benchmarking Real-Time Fire and Smoke Segmentation in RGB Images for Wildfire Monitoring](https://drive.google.com/file/d/1xqfWndVBDkPvf8w85ANuCTG5_Ddi0RqK/view?usp=sharing).
+Currently working on my master thesis named: [Benchmarking Real-Time Fire and Smoke Segmentation in RGB Images for Wildfire Monitoring](https://drive.google.com/file/d/1xqfWndVBDkPvf8w85ANuCTG5_Ddi0RqK/view?usp=sharing) (early report).
 
 
 <p align="center">
