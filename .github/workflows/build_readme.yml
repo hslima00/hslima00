@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      API_KEY: ${{ env.API_KEY }}  # Accessing the environment variable
+      API_KEY: ${{ vars.API_KEY }}  # Accessing the environment variable
 
     steps:
     - name: Check out repo
@@ -31,7 +31,7 @@ jobs:
         python -m pip install -r requirements.txt
     - name: Update README
       run: |
-        python build_readme.py --api_key ${{ env.API_KEY }}
+        python build_readme.py --api_key ${{ vars.API_KEY }}
         cat README.md
     - name: Commit and push if README changed
       run: |
