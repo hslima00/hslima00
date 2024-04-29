@@ -3,7 +3,7 @@ Currently working on my master thesis named: [Benchmarking Real-Time Fire and Sm
 
 This table is updated automatically every day. If you want to know how I do this check [here](https://github.com/hslima00/hslima00).
 
-	<!-- recent_updates starts -->
+<!-- recent_updates starts -->
 
 
 | Update | Link | Date |
