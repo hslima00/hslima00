@@ -16,7 +16,7 @@ This table is updated automatically every day. If you want to know how I do this
 
 <!-- recent_updates ends -->
 
-<p align="left">
+<p align="right">
     <a href="https://github.com/anuraghazra/github-readme-stats">
 	  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=hslima00&langs_count=5&hide=jupyter%20notebook,html&show_icons=true&locale=en&theme=transparent" alt="hslima00" height="230px"/>
 	
