@@ -1,13 +1,8 @@
 ### Hi there 👋
 
-<div style="display: flex;">
-    <div style="flex: 1;">
-        Currently working on my master thesis named: [Benchmarking Real-Time Fire and Smoke Segmentation in RGB Images for Wildfire Monitoring](https://drive.google.com/file/d/1xqfWndVBDkPvf8w85ANuCTG5_Ddi0RqK/view?usp=sharing) (early report).
-        <br>This table is updated automatically every day. If you want to know how I do this check [here](https://github.com/hslima00/hslima00).
-    </div>
-    <div style="flex: 1;">
-        <!-- recent_updates starts -->
+Currently working on my master thesis named: [Benchmarking Real-Time Fire and Smoke Segmentation in RGB Images for Wildfire Monitoring](https://drive.google.com/file/d/1xqfWndVBDkPvf8w85ANuCTG5_Ddi0RqK/view?usp=sharing) (early report).
 
+This table is updated automatically every day. If you want to know how I do this check [here](https://github.com/hslima00/hslima00).
 
 | Update | Link | Date |
 | ------ | ---- | ---- |
@@ -16,10 +11,6 @@
 | 1-Mar-24 | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#1-mar-24) | 2024-04-28 03:27 |
 | 8-Mar-24 | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#8-mar-24) | 2024-04-28 03:27 |
 | 22-Mar-24 | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#22-mar-24) | 2024-04-28 03:27 |
-
-<!-- recent_updates ends -->
-    </div>
-</div>
 
 <p align="center">
     <a href="https://github.com/anuraghazra/github-readme-stats">
