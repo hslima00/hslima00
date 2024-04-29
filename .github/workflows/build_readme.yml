@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      API_KEY: ${{ secrets.API_KEY }}  # Assuming you have stored the value in secrets
+      API_KEY: ${{ env.API_KEY }}  # Accessing the environment variable
 
     steps:
     - name: Check out repo
@@ -38,5 +38,5 @@ jobs:
         git diff
         git config --global user.email "readme-bot@example.com"
         git config --global user.name "README-bot"
-        git diff --quiet || (git add README.md && git commit -m "Updated README")
+        git diff --quiet || (git add README.md and git commit -m "Updated README")
         git push
