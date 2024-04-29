@@ -96,7 +96,7 @@ if __name__ == "__main__":
     update_helper_file('updates.json', all_updates)
 
     recent_updates = get_recent_updates('updates.json', count=5)
-    recent_updates_md = "### Recent Updates\n\n| Update | Link | Date |\n| ------ | ---- | ---- |\n"
+    recent_updates_md = "\n\n| Update | Link | Date |\n| ------ | ---- | ---- |\n"
     for update in recent_updates:
         recent_updates_md += f"| {update['text']} | [Link]({update['link']}) | {update['date']} |\n"
 
