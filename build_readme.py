@@ -17,7 +17,6 @@ def replace_chunk(content, marker, chunk):
     return r.sub(chunk, content)
 
 def fetch_thesis_updates(url):
-    print(url)
     response = httpx.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
     
@@ -84,7 +83,7 @@ if __name__ == "__main__":
         readme_contents = file.read()
 
     files = fetch_github_files('hslima00', 'Tese_md', 'Tese_md/Markdown', args.api_key)
-    print(f"Files: {files}")
+    #test
     base_url = "https://hslima00.github.io/Tese_md/"
 
     urls = [base_url + file + ('/' if file != 'index' else '') for file in files]
