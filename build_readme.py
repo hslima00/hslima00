@@ -1,16 +1,12 @@
-from python_graphql_client import GraphqlClient
-import feedparser
+import argparse
 import httpx
 import json
 import pathlib
 import re
-import os
-from bs4 import BeautifulSoup  # Import BeautifulSoup for HTML parsing
+from bs4 import BeautifulSoup
+from datetime import datetime, timedelta
 
 root = pathlib.Path(__file__).parent.resolve()
-client = GraphqlClient(endpoint="https://api.github.com/graphql")
-
-TOKEN = os.environ.get("SIMONW_TOKEN", "")
 
 def replace_chunk(content, marker, chunk):
     r = re.compile(
@@ -20,76 +16,92 @@ def replace_chunk(content, marker, chunk):
     chunk = "<!-- {} starts -->\n{}\n<!-- {} ends -->".format(marker, chunk, marker)
     return r.sub(chunk, content)
 
-# Add a function to fetch and parse the last update from the thesis website
-def fetch_thesis_updates():
-    response = httpx.get("https://hslima00.github.io/Tese_md/")
+def fetch_thesis_updates(url):
+    print(url)
+    response = httpx.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
-    last_update = soup.find(text="Last update:").find_next().text
-    return last_update
+    
+    updates = []
+    for heading in soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']):
+        text = heading.text.strip()
+        anchor = "#" + text.lower().replace(' ', '-')
+        updates.append((text, f"{url}{anchor}"))
+        
+    if updates:
+        return updates
 
-def fetch_releases(token):
-    headers = {"Authorization": f"Bearer {token}"}
-    query = """
-    {
-      repository(owner:"OWNER", name:"REPO") {
-        releases(last: 5) {
-          nodes {
-            name
-            tagName
-            url
-            publishedAt
-          }
-        }
-      }
-    }
-    """
-    data = client.execute(query=query, headers=headers)
-    releases = [
-        {
-            "repo": "REPO",
-            "release": release["name"],
-            "url": release["url"],
-            "published_at": release["publishedAt"]
-        }
-        for release in data["data"]["repository"]["releases"]["nodes"]
-    ]
-    return releases
+def load_data(filepath):
+    try:
+        with open(filepath, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            return data
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
+
+def save_data(filepath, data):
+    with open(filepath, 'w', encoding='utf-8') as file:
+        json.dump(data, file, ensure_ascii=False, indent=4)
+
+def update_helper_file(filepath, all_updates):
+    data = load_data(filepath)
+    current_date = datetime.now().strftime("%Y-%m-%d %H:%M")
+    updated = False
+
+    for updates in all_updates:
+        for text, link in updates:
+            if not any(d['link'] == link for d in data):
+                data.append({'text': text, 'link': link, 'date': current_date})
+                updated = True
+
+    if updated:
+        save_data(filepath, data)
+
+def get_recent_updates(filepath, count=5):
+    data = load_data(filepath)
+    sorted_data = sorted(data, key=lambda x: x['date'], reverse=True)
+    return sorted_data[:count]
+
+def fetch_github_files(owner, repo, path, token):
+    url = f"https://api.github.com/repos/{owner}/{repo}/contents/{path}"
+    headers = {'Authorization': f'token {token}'}
+    response = httpx.get(url, headers=headers)
+    if response.status_code == 200:
+        files = [item['name'] for item in response.json() if item['type'] == 'file' and item['name'].endswith('.md')]
+        files = [file.replace('.md', '') for file in files]
+        return files
+    else:
+        print(f"Failed to fetch files: {response.status_code}")
+        print(f"Response: {response.text}")
+        return []
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Update README with the latest thesis updates.")
+    parser.add_argument('--api_key', required=True, help='GitHub API key for accessing repository data')
+    args = parser.parse_args()
+
     readme = root / "README.md"
-    releases = fetch_releases(TOKEN)
-    releases.sort(key=lambda r: r["published_at"], reverse=True)
-    md = "\n".join(
-        [
-            "* [{repo} {release}]({url}) - {published_at}".format(**release)
-            for release in releases[:5]
-        ]
-    )
-    readme_contents = readme.open().read()
-    rewritten = replace_chunk(readme_contents, "recent_releases", md)
+    with readme.open("r", encoding='utf-8') as file:
+        readme_contents = file.read()
 
-    tils = fetch_tils()
-    tils_md = "\n".join(
-        [
-            "* [{title}]({url}) - {created_at}".format(
-                title=til["title"],
-                url=til["url"],
-                created_at=til["created_utc"].split("T")[0],
-            )
-            for til in tils
-        ]
-    )
-    rewritten = replace_chunk(rewritten, "tils", tils_md)
+    files = fetch_github_files('hslima00', 'Tese_md', 'Tese_md/Markdown', args.api_key)
+    print(f"Files: {files}")
+    base_url = "https://hslima00.github.io/Tese_md/"
 
-    entries = fetch_blog_entries()[:5]
-    entries_md = "\n".join(
-        ["* [{title}]({url}) - {published}".format(**entry) for entry in entries]
-    )
-    rewritten = replace_chunk(rewritten, "blog", entries_md)
+    urls = [base_url + file + ('/' if file != 'index' else '') for file in files]
 
-    # Fetch and add thesis updates
-    thesis_update = fetch_thesis_updates()
-    thesis_update_md = f"Last Thesis Update: {thesis_update}"
-    rewritten = replace_chunk(rewritten, "thesis_update", thesis_update_md)
+    all_updates = []
+    for url in urls:
+        updates = fetch_thesis_updates(url)
+        all_updates.append(updates)
 
-    readme.open("w").write(rewritten)
+    update_helper_file('updates.json', all_updates)
+
+    recent_updates = get_recent_updates('updates.json', count=5)
+    recent_updates_md = "### Recent Updates\n\n| Update | Link | Date |\n| ------ | ---- | ---- |\n"
+    for update in recent_updates:
+        recent_updates_md += f"| {update['text']} | [Link]({update['link']}) | {update['date']} |\n"
+
+    # Update README.md
+    readme_contents = replace_chunk(readme_contents, "recent_updates", recent_updates_md)
+    with readme.open("w", encoding='utf-8') as file:
+        file.write(readme_contents)

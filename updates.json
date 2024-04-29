@@ -1,0 +1,127 @@
+[
+    {
+        "text": "Reuniões",
+        "link": "https://hslima00.github.io/Tese_md/2_reunioes/#reuniões",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "1-Mar-24",
+        "link": "https://hslima00.github.io/Tese_md/2_reunioes/#1-mar-24",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "8-Mar-24",
+        "link": "https://hslima00.github.io/Tese_md/2_reunioes/#8-mar-24",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "22-Mar-24",
+        "link": "https://hslima00.github.io/Tese_md/2_reunioes/#22-mar-24",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "26-Apr-24",
+        "link": "https://hslima00.github.io/Tese_md/2_reunioes/#26-apr-24",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "Meeting with Rashmi",
+        "link": "https://hslima00.github.io/Tese_md/2_reunioes/#meeting-with-rashmi",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "CIAFA",
+        "link": "https://hslima00.github.io/Tese_md/3_ciafa/#ciafa",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "YOLOv9",
+        "link": "https://hslima00.github.io/Tese_md/3_ciafa/#yolov9",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "Activating venv and installed libs",
+        "link": "https://hslima00.github.io/Tese_md/3_ciafa/#activating-venv-and-installed-libs",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "Datasets",
+        "link": "https://hslima00.github.io/Tese_md/4_datasets/#datasets",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "Links",
+        "link": "https://hslima00.github.io/Tese_md/5_links/#links",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "01-Mar-24",
+        "link": "https://hslima00.github.io/Tese_md/5_links/#01-mar-24",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "Workplan",
+        "link": "https://hslima00.github.io/Tese_md/7_workplan/#workplan",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "YOLOv9",
+        "link": "https://hslima00.github.io/Tese_md/8_yolov9/#yolov9",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "Treino numa custom dataset",
+        "link": "https://hslima00.github.io/Tese_md/8_yolov9/#treino-numa-custom-dataset",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "Resultados do Treino",
+        "link": "https://hslima00.github.io/Tese_md/8_yolov9/#resultados-do-treino",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "Inferência em custom dataset",
+        "link": "https://hslima00.github.io/Tese_md/8_yolov9/#inferência-em-custom-dataset",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "Outputs do YOLOv9",
+        "link": "https://hslima00.github.io/Tese_md/8_yolov9/#outputs-do-yolov9",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "Pipeline",
+        "link": "https://hslima00.github.io/Tese_md/9_pipeline/#pipeline",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "Input do SAM como bounding box",
+        "link": "https://hslima00.github.io/Tese_md/9_pipeline/#input-do-sam-como-bounding-box",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "Imagem RBG -> Mascara preto e branc",
+        "link": "https://hslima00.github.io/Tese_md/9_pipeline/#imagem-rbg-->-mascara-preto-e-branc",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "Duvidas para a reunião",
+        "link": "https://hslima00.github.io/Tese_md/9_pipeline/#duvidas-para-a-reunião",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "18-Apr-24",
+        "link": "https://hslima00.github.io/Tese_md/9_pipeline/#18-apr-24",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "22-Apr-24",
+        "link": "https://hslima00.github.io/Tese_md/9_pipeline/#22-apr-24",
+        "date": "2024-04-28 03:27"
+    },
+    {
+        "text": "TODO'S",
+        "link": "https://hslima00.github.io/Tese_md/index#todo's",
+        "date": "2024-04-28 03:27"
+    }
+]
