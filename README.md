@@ -1,7 +1,7 @@
 ### Hi there 👋
 Currently working on my master thesis named: [Benchmarking Real-Time Fire and Smoke Segmentation in RGB Images for Wildfire Monitoring](https://drive.google.com/file/d/1xqfWndVBDkPvf8w85ANuCTG5_Ddi0RqK/view?usp=sharing) (early report).
 
-This table is updated automatically every day. If you want to know how I do this check [here](https://github.com/hslima00/hslima00).
+This table is updated automatically every day if I add new chapters on my thesis [blog](https://bit.ly/tese_lima). If you want to know how I do this check [here](https://github.com/hslima00/hslima00).
 
 <!-- recent_updates starts -->
 
