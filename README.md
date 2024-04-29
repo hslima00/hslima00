@@ -27,7 +27,7 @@ This table is updated automatically every day. If you want to know how I do this
     <div style="flex: 1;">
         <p align="left">
             
-[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=lima002&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=false)](https://spotify-github-profile.vercel.app/api/view?uid=lima002&redirect=true)
+[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=lima002&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true)](https://github.com/kittinan/spotify-github-profile)
 </p>
     </div>
 </div>
