@@ -5,17 +5,17 @@ This table is updated automatically every day. If you want to know how I do this
 <p>
 	<p align="left">
 	<!-- recent_updates starts -->
-	### Recent Updates
-	
-	| Update | Link | Date |
-	| ------ | ---- | ---- |
-	| uau um novo header! | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#uau-um-novo-header!) | 2024-04-29 03:19 |
-	| Reuniões | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#reuniões) | 2024-04-28 03:27 |
-	| 1-Mar-24 | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#1-mar-24) | 2024-04-28 03:27 |
-	| 8-Mar-24 | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#8-mar-24) | 2024-04-28 03:27 |
-	| 22-Mar-24 | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#22-mar-24) | 2024-04-28 03:27 |
-	</p>
-	<!-- recent_updates ends -->
+
+
+| Update | Link | Date |
+| ------ | ---- | ---- |
+| uau um novo header! | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#uau-um-novo-header!) | 2024-04-29 03:19 |
+| Reuniões | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#reuniões) | 2024-04-28 03:27 |
+| 1-Mar-24 | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#1-mar-24) | 2024-04-28 03:27 |
+| 8-Mar-24 | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#8-mar-24) | 2024-04-28 03:27 |
+| 22-Mar-24 | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#22-mar-24) | 2024-04-28 03:27 |
+
+<!-- recent_updates ends -->
 
 	<p align="right">
 	    <a href="https://github.com/anuraghazra/github-readme-stats">
