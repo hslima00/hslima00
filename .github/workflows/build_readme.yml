@@ -9,7 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+    env:
+      API_KEY: ${{ secrets.API_KEY }}  # Assuming you have stored the value in secrets
+
     steps:
     - name: Check out repo
       uses: actions/checkout@v2
@@ -28,11 +30,11 @@ jobs:
       run: |
         python -m pip install -r requirements.txt
     - name: Update README
-      run: |-
-        python build_readme.py --api_key ${{ secrets.API_KEY }}
+      run: |
+        python build_readme.py --api_key ${{ env.API_KEY }}
         cat README.md
     - name: Commit and push if README changed
-      run: |-
+      run: |
         git diff
         git config --global user.email "readme-bot@example.com"
         git config --global user.name "README-bot"
