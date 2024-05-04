@@ -8,11 +8,11 @@ This table is updated automatically every day if I add new chapters on my thesis
 
 | Update | Link | Date |
 | ------ | ---- | ---- |
+| 03-May-24 | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#03-may-24) | 2024-05-04 04:13 |
+| YOLOv9 retrain 02-May-24 | [Link](https://hslima00.github.io/Tese_md/8_yolov9/#yolov9-retrain-02-may-24) | 2024-05-04 04:13 |
 | Meeting with Rashmi 27-Apr-24 | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#meeting-with-rashmi-27-apr-24) | 2024-04-29 19:09 |
 | todo | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#todo) | 2024-04-29 04:13 |
 | uau um novo header! | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#uau-um-novo-header!) | 2024-04-29 03:19 |
-| Reuniões | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#reuniões) | 2024-04-28 03:27 |
-| 1-Mar-24 | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#1-mar-24) | 2024-04-28 03:27 |
 
 <!-- recent_updates ends -->
 
