@@ -8,11 +8,11 @@ This table is updated automatically every day if I add new chapters on my thesis
 
 | Update | Link | Date |
 | ------ | ---- | ---- |
-| 03-May-24 | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#03-may-24) | 2024-05-04 04:13 |
-| YOLOv9 retrain 02-May-24 | [Link](https://hslima00.github.io/Tese_md/8_yolov9/#yolov9-retrain-02-may-24) | 2024-05-04 04:13 |
-| Meeting with Rashmi 27-Apr-24 | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#meeting-with-rashmi-27-apr-24) | 2024-04-29 19:09 |
-| todo | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#todo) | 2024-04-29 04:13 |
-| uau um novo header! | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#uau-um-novo-header!) | 2024-04-29 03:19 |
+| Organizer | [Link](https://hslima00.github.io/Tese_md/10_organizer/#organizer) | 2024-05-07 04:14 |
+| What does it do? | [Link](https://hslima00.github.io/Tese_md/10_organizer/#what-does-it-do?) | 2024-05-07 04:14 |
+| How to use it? | [Link](https://hslima00.github.io/Tese_md/10_organizer/#how-to-use-it?) | 2024-05-07 04:14 |
+| 03-May-24 (Maj. Cruz) | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#03-may-24-(maj.-cruz)) | 2024-05-07 04:14 |
+| 06-May-24 (Prof. Bernardino) | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#06-may-24-(prof.-bernardino)) | 2024-05-07 04:14 |
 
 <!-- recent_updates ends -->
 
