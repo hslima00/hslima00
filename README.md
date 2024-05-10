@@ -8,11 +8,11 @@ This table is updated automatically every day if I add new chapters on my thesis
 
 | Update | Link | Date |
 | ------ | ---- | ---- |
+| 09-May-24 (Maj. Cruz) | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#09-may-24-(maj.-cruz)) | 2024-05-10 04:12 |
 | Organizer | [Link](https://hslima00.github.io/Tese_md/10_organizer/#organizer) | 2024-05-07 04:14 |
 | What does it do? | [Link](https://hslima00.github.io/Tese_md/10_organizer/#what-does-it-do?) | 2024-05-07 04:14 |
 | How to use it? | [Link](https://hslima00.github.io/Tese_md/10_organizer/#how-to-use-it?) | 2024-05-07 04:14 |
 | 03-May-24 (Maj. Cruz) | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#03-may-24-(maj.-cruz)) | 2024-05-07 04:14 |
-| 06-May-24 (Prof. Bernardino) | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#06-may-24-(prof.-bernardino)) | 2024-05-07 04:14 |
 
 <!-- recent_updates ends -->
 
