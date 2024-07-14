@@ -40,7 +40,7 @@ This table is updated automatically every day if I add new chapters on my thesis
 </table>
 <!--- stats (end) -->
             
-[![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=lima002&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true)](https://github.com/kittinan/spotify-github-profile)
+[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=lima002&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false)](https://github.com/kittinan/spotify-github-profile)
 </p>
     </div>
 </div>
