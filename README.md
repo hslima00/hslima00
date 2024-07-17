@@ -8,11 +8,11 @@ This table is updated automatically every day if I add new chapters on my thesis
 
 | Update | Link | Date |
 | ------ | ---- | ---- |
+| 15-Jul-24 (prof. Bernardino) | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#15-jul-24-(prof.-bernardino)) | 2024-07-17 04:13 |
 | 28-Jun-24 | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#28-jun-24) | 2024-07-12 04:13 |
 | 12-Jul-24 | [Link](https://hslima00.github.io/Tese_md/9_pipeline/#12-jul-24) | 2024-07-12 04:13 |
 | 21-Jun-24 (Prof. Bernardino + Maj. Cruz) | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#21-jun-24-(prof.-bernardino-+-maj.-cruz)) | 2024-06-24 04:14 |
 | 06-Jun-24 (Maj. Cruz) | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#06-jun-24-(maj.-cruz)) | 2024-06-07 04:14 |
-| TESTE | [Link](https://hslima00.github.io/Tese_md/2_reunioes/#teste) | 2024-06-04 04:13 |
 
 <!-- recent_updates ends -->
 
