@@ -1,4 +1,0 @@
-feedparser
-httpx
-beautifulsoup4
-python_graphql_client
